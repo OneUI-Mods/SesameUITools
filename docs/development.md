@@ -86,3 +86,5 @@ Android 17実機で旧版・新版の署名照合、設定と言語のバック�
 ## セサミの検索ヘッダー
 
 3.0.266の`fg_devicelist.xml`では、`appBarLayout`が白背景のAppBarLayout、`searchEditText`が角丸のEditTextです。AppBarLayoutはXMLのColorDrawableをMaterialの独自形状に置き換えるため、通常のDrawable変換だけでは白い帯が残りました。確認済みのIDに限りViewの公開backgroundTintListで塗り色を指定し、形状・角丸・スクロールフラグは維持します。検索欄は面色・ヒント・単色の虫眼鏡を個別の役割で調整します。機器操作APIは対象外です。
+
+- [Kotlin移行の設計と検証範囲](kotlin-migration.md)

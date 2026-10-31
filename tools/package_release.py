@@ -32,6 +32,10 @@ def validate(apk, tools):
     manifest = run(
         tools / "aapt2", "dump", "xmltree", apk, "--file", "AndroidManifest.xml", capture=True
     ).stdout
+    if ("io.github.libxposed.service.XposedProvider" not in manifest
+            or "dev.ryuya.darkapps.XposedService" not in manifest):
+        raise RuntimeError("Missing official API 102 app-side Binder provider")
+
     if '"dev.ryuya.darkapps.config"' not in manifest or "dev.ryuya.sesameui" in manifest:
         raise RuntimeError("Unexpected settings authority or legacy package reference")
     if any(

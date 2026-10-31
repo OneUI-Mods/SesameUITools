@@ -9,8 +9,8 @@ android {
         applicationId 'dev.ryuya.darkapps'
         minSdk 36
         targetSdk 37
-        versionCode 10
-        versionName '0.3.0-experimental'
+        versionCode 11
+        versionName '0.3.1-experimental'
     }
     buildFeatures {
         buildConfig true
@@ -30,6 +30,8 @@ android {
     }
 }
 dependencies {
+    implementation 'io.github.libxposed:service:102.0.0'
+
     compileOnly 'io.github.libxposed:api:102.0.0'
     implementation 'com.google.android.material:material:1.14.0'
     testImplementation 'junit:junit:4.13.2'

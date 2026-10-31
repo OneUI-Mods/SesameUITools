@@ -5,7 +5,7 @@
         <package android:name="co.candyhouse.sesame2"/>
         <package android:name="com.kddi.kdla.jp"/>
     </queries>
-    <application android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:theme="@style/AppTheme" android:allowBackup="false" android:localeConfig="@xml/locales_config" android:description="@string/module_description">
+    <application android:name=".ModuleApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:theme="@style/AppTheme" android:allowBackup="false" android:localeConfig="@xml/locales_config" android:description="@string/module_description">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
